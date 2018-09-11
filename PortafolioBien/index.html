@@ -16,21 +16,21 @@
 	<header>
 		<div class="contenedor">
 			<nav class="menu">
-				<a href="#">Acerca de</a>
-				<a href="#">Trabajos</a>
-				<a href="#">Contacto</a>
+				<a href="#" id="btn-acerca-de">Acerca de</a>
+				<a href="#" id="btn-trabajos">Trabajos</a>
+				<a href="#" id="btn-contacto">Contacto</a>
 			</nav>
 			<div class="contenedor-texto">
 				<div class="texto">
 					<h1 class="nombre">Medina Lautaro Leonel</h1>
-					<h2 class="profesion">Desarrollador Full Stack</h2>
+					<h2 class="profesion">Desarrollador</h2>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<section class="main">
-		<section class="acerca-de">
+		<section class="acerca-de" id="acerca-de">
 			<div class="contenedor">
 				<div class="foto">
 					<img src="img/imgcv.jpg"  width="115" height="115" 	alt="Medina Lautaro">
@@ -39,18 +39,18 @@
 				<div class="texto">
 					<h3 class="titulo">Acerca de</h3>
 					<p>Soy estudiante de la carrera de <span class="bold">Analista de Sistemas</span> en el Instituto Superior de Formación Técnica N°197. 
-					<br/>Mis conocimientos en programación son: <span class="bold">Java O.O, Hibernate ABM, VB.NET O.O, HTML5, CSS, 
+					<br/>Mis conocimientos en programación son: <span class="bold">Java, Hibernate ABM, VB.NET, HTML5, CSS3, 
 					<br/>JavaScript, Bootstrap, Responsive Design, Git, SQL Server, Patrones de diseño DAO, MVC.</span></p>
 				</div>
 			</div>
 		</section>
-		<section class="trabajos">
+		<section class="trabajos" id="trabajos">
 			<div class="contenedor">
 				<h3 class="titulo">Trabajos</h3>
 				<div class="contenedor-trabajos">
 					<div class="trabajo">
 						<div class="thumb">
-							<img src="img/heladeria.jpg" alt="Aplicacion en leguaje java con patron de diseño DAO, MySQL">
+							<a href="https://github.com/medinalautaro354/Heladeria"><img src="img/heladeria.jpg" alt="Aplicacion en leguaje java con patron de diseño DAO, MySQL" ></a>
 						</div>
 						<div class="descripcion">
 							<p class="nombre">Heladeria</p>
@@ -59,20 +59,21 @@
 					</div>
 					<div class="trabajo">
 						<div class="thumb">
-							<img src="img/heladeria.jpg" alt="Aplicacion en leguaje java con patron de diseño DAO, MySQL">
+							<a href="https://github.com/medinalautaro354/Caf-"><img src="img/cafe.png" alt="Pagina web para un cafe con HTML5, CSS3, JavaScript, jQuery"></a>
+							
 						</div>
 						<div class="descripcion">
-							<p class="nombre">Heladeria</p>
-							<p class="categoria">Java, MySQL, DAO</p>
+							<p class="nombre">Cafe</p>
+							<p class="categoria">HMTL5, CSS3, JavaScript, jQuery</p>
 						</div>
 					</div>
 					<div class="trabajo">
 						<div class="thumb">
-							<img src="img/heladeria.jpg" alt="Aplicacion en leguaje java con patron de diseño DAO, MySQL">
-						</div>
+							<a href="https://github.com/medinalautaro354/SistemaConMVC"><img src="img/sistemaMVC.jpg" alt="Sistema con patron de diseño MVC y MySQL">
+														</div></a>
 						<div class="descripcion">
-							<p class="nombre">Heladeria</p>
-							<p class="categoria">Java, MySQL, DAO</p>
+							<p class="nombre">Sistema MVC</p>
+							<p class="categoria">Java, MySQL, MVC</p>
 						</div>
 					</div>
 					<div class="trabajo">
@@ -90,10 +91,10 @@
 	</section>
 
 	<footer>
-		<section class="contacto">
+		<section class="contacto" id="contacto">
 			<div class="contenedor">
 				<h3 class="titulo">Contacto</h3>
-				<form class="formulario" action="">
+				<form class="formulario" action="js/enviarForm.php">
 					<input type="text" placeholder="Nombre:" name="nombre" required>
 					<input type="email" placeholder="Correo:" name="correo" required>
 					<textarea name="mensaje" placeholder="Mensaje:"></textarea>
@@ -109,5 +110,9 @@
 			</div>
 		</section>
 	</footer>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/efectos.js"></script>
+
 </body>
 </html>
